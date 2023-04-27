@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <div class="input-groups">
+          <div class="input-group" id="dayGroup">
+            <label for="day" class="lable">DAY</label>
+            <input
+              type="text"
+              id="day"
+              name="day"
+              placeholder="DD"
+              maxlength="2"
+            />
+            <span class="alert">Must be valid</span>
+          </div>
+          <div class="input-group" id="monthGroup">
+            <label for="month" class="lable">MONTH</label>
+            <input
+              type="text"
+              id="month"
+              name="month"
+              placeholder="MM"
+              maxlength="2"
+            />
+            <span class="alert">Must be valid</span>
+          </div>
+          <div class="input-group" id="yearGroup">
+            <label for="year" class="lable">YEAR</label>
+            <input
+              type="text"
+              id="year"
+              name="year"
+              placeholder="YYYY"
+              maxlength="4"
+            />
+            <span class="alert">Must be valid</span>
+          </div>
+        </div>
+        <span class="line-break"></span>
+        <button class="btn">
+          <img src="assets/images/icon-arrow.svg" alt="button" />
+        </button>
+        <div class="result">
+          <p><span class="purple" id="yearsResult">--</span> years</p>
+          <p><span class="purple" id="monthResult">--</span> months</p>
+          <p><span class="purple" id="daysResult">--</span> days</p>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
